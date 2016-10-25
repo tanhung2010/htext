@@ -1,8 +1,8 @@
 {
     "name": "htext",
     "displayName": "HText",
-    "description": "easy touching text , number , obd diagnostic",
-    "version": "0.0.1",
+    "description": "Utilities for text , line , number , obd ....",
+    "version": "1.0.0",
     "publisher": "HungVo",
     "engines": {
         "vscode": "^1.5.0"
@@ -20,6 +20,10 @@
             "title": "htext"
         }]
     },
+    "contributors":[{
+        "name": "Hung Vo",
+        "email": "tanhung2010@gmail.com"
+    }],
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
