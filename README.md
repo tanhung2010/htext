@@ -8,15 +8,40 @@ This is the README for your extension "htext". After writing up a brief descript
 * lower case : [hteXt] -> [htext]
 * invert case : [hteXt] -> [HTExT]
 * proper case :  [hteXt] -> [Htext]
-### Text line Utilities
-* sort A-Z: 
-           [abc         [abc
-           def     ->    bea
-           bea]          def]
-* sort Z-A : 
-           [abc         [def
-           def     ->    bea
-           bea]          abc]  
+
+### line Utilities
+* sort A-Z:
+<table>
+<tr>
+<th>before</th>
+<th>after</th>
+</tr>
+<tr>
+ <td>abc</td><td>abc</td><br>
+ </tr>
+ <tr>
+ <td>def</td><td>bea</td><br>
+ </tr>
+ <tr>
+ <td>bea</td><td>def</td><br>
+ </tr>
+ </table>
+* sort Z-A :
+<table>
+<tr>
+<th>before</th>
+<th>after</th>
+</tr>
+<tr>
+ <td>abc</td><td>def</td><br>
+ </tr>
+ <tr>
+ <td>def</td><td>bea</td><br>
+ </tr>
+ <tr>
+ <td>bea</td><td>abc</td><br>
+ </tr>
+ </table>
 * Remove Dupplicate lines
 * remove blank line
 ### Number 
