@@ -4,26 +4,26 @@ This is the README for your extension "htext". After writing up a brief descript
 
 ## Features
 ### Text Utilities
-*upper case : [hteXt] -> [HTEXT]
-*lower case : [hteXt] -> [htext]
-*invert case : [hteXt] -> [HTExT]
-*proper case :  [hteXt] -> [Htext]
+* upper case : [hteXt] -> [HTEXT]
+* lower case : [hteXt] -> [htext]
+* invert case : [hteXt] -> [HTExT]
+* proper case :  [hteXt] -> [Htext]
 ### Text line Utilities
-*sort A-Z: 
+* sort A-Z: 
            [abc         [abc
            def     ->    bea
            bea]          def]
-*sort Z-A : 
+* sort Z-A : 
            [abc         [def
            def     ->    bea
            bea]          abc]  
-*Remove Dupplicate lines
-*remove blank line
+* Remove Dupplicate lines
+* remove blank line
 ### Number 
-*will be support on next version
+* will be support on next version
 
 ### OBD Utilties
-*will be support on next version
+* will be support on next version
 
 ## Requirements
 
