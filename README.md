@@ -1,6 +1,5 @@
-# htext README
+#README
 
-This is the README for your extension "htext". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 ### Text Utilities
