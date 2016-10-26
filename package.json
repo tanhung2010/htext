@@ -1,8 +1,8 @@
 {
     "name": "htext",
-    "displayName": "HText",
+    "displayName": "Text",
     "description": "Utilities for text , line , number , obd ....",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "HungVo",
     "engines": {
         "vscode": "^1.5.0"
