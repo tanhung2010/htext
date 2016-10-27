@@ -10,39 +10,45 @@
 
 ### line Utilities
 * sort A-Z:
-<table>
-<tr>
-<th>before</th>
-<th>after</th>
-</tr>
-<tr>
- <td>abc</td><td>abc</td><br>
- </tr>
- <tr>
- <td>def</td><td>bea</td><br>
- </tr>
- <tr>
- <td>bea</td><td>def</td><br>
- </tr>
- </table>
+
+abc
+efg
+cde
+-> 
+abc
+efg
+cde
+
 * sort Z-A :
-<table>
-<tr>
-<th>before</th>
-<th>after</th>
-</tr>
-<tr>
- <td>abc</td><td>def</td><br>
- </tr>
- <tr>
- <td>def</td><td>bea</td><br>
- </tr>
- <tr>
- <td>bea</td><td>abc</td><br>
- </tr>
- </table>
+abc
+efg
+cde
+-> 
+efg
+cde
+abc
+
 * Remove Dupplicate lines
+abc
+abc
+efg
+cde
+efg
+-> 
+abc
+efg
+cde
 * remove blank line
+abc
+
+efg
+cde
+
+-> 
+abc
+efg
+cde
+
 ### Number 
 * will be support on next version
 

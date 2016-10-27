@@ -25,3 +25,22 @@ function htextfunction_number() {
 };
 
 module.exports.htextfunction_number =htextfunction_number;
+
+module.exports.OnTextChange_Hex =OnTextChange_Hex;
+function OnTextChange_Hex()
+{
+
+    
+    return new Promise(
+        function(resolve,reject){
+        let e = vscode.window.activeTextEditor;
+        let d = e.document;
+        let sel = e.selections;
+        var txt = d.getText();
+        var arrdata = txt.split(' ');
+    
+            resolve(arrdata.length);
+        }
+    );
+}
+
