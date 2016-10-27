@@ -10,44 +10,35 @@
 
 ### line Utilities
 * sort A-Z:
-
-abc
-efg
-cde
--> 
-abc
-efg
-cde
-
+<pre> 
+[abc]          [abc]
+[efg]	->	   [efg]
+[cde]		   [dec]
+</pre>
+ 
 * sort Z-A :
-abc
-efg
-cde
--> 
-efg
-cde
-abc
+<pre> 
+abc				 efg
+efg		->		 cde
+cde				 abc
+</pre>
 
 * Remove Dupplicate lines
-abc
-abc
-efg
+<pre>
+abc  	 		abc
+abc   ->		efg
+efg				cde
 cde
 efg
--> 
-abc
-efg
-cde
+</pre>
+
 * remove blank line
-abc
-
-efg
+<pre>
+abc				abc
+[Blank]		->	efg
+efg				cde
 cde
-
--> 
-abc
-efg
-cde
+</pre>
 
 ### Number 
 * will be support on next version
