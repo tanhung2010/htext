@@ -2,7 +2,7 @@
     "name": "htext",
     "displayName": "Text",
     "description": "Utilities for text , line , number , obd ....",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "publisher": "HungVo",
     "engines": {
         "vscode": "^1.5.0"
@@ -15,20 +15,25 @@
     ],
     "main": "./extension",
     "contributes": {
-        "commands": [{
-            "command": "extension.htext",
-            "title": "htext"
-        }]
+        "commands": [
+            {
+                "command": "extension.htext",
+                "title": "htext"
+            }
+        ]
     },
-    "contributors":[{
-        "name": "Hung Vo",
-        "email": "tanhung2010@gmail.com"
-    }],
+    "icon": "vinahitek.png",
+    "contributors": [
+        {
+            "name": "Hung Vo",
+            "email": "tanhung2010@gmail.com"
+        }
+    ],
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "dependencies": {
-        "underscore.string":"^3.2.2"
+        "underscore.string": "^3.2.2"
     },
     "devDependencies": {
         "typescript": "^2.0.3",
