@@ -3,6 +3,7 @@ var p_util = require('./htext_util.js');
 var p_text = require('./htext_text.js');
 var p_number = require('./htext_number.js');
 var p_lines = require('./htext_line.js');
+var p_obd = require('./htext_obd');
 var Window = vscode.window;
 
 var statusbaritem = vscode.StatusBarItem;
@@ -18,7 +19,10 @@ function htext_mainmenu() {
     items.push({ label: "number", description: "utilities for number" ,funcb:p_number.htextfunction_number});
     items.push({ label: "line", description: "utilities for line",funcb:p_lines.htextfunction_lines });
 
+    items.push({ label: "obd", description: "utilities for OBD2",funcb:p_obd.htextfunction_obd });
+
     p_util.htext_handlemenu(items);
+    
 }
 
 module.exports.htext_mainmenu = htext_mainmenu;
@@ -39,9 +43,9 @@ function htext_ontextchange()
 
     Window.onDidChangeTextEditorSelection((listener)=>
     {
-let e = vscode.window.activeTextEditor;
-let d = e.document;
-let sel = e.selections;
+    let e = vscode.window.activeTextEditor;
+    let d = e.document;
+    let sel = e.selections;
         //      //let _statusBarItem=StatusBarItem;
 
 //      updateWordCount() {
@@ -51,13 +55,13 @@ let sel = e.selections;
               
             statusbaritem = Window.createStatusBarItem(vscode.StatusBarAlignment.Left);
         }
-
+       
         //   if (d.languageId === "markdown")
         // {
             p_number.OnTextChange_Hex()
             .then(function (val)
             {
-                statusbaritem.text = "Len:"+val;
+                statusbaritem.text = "len:"+val["len"];
                 statusbaritem.show();
             })
             .catch(function(reason)

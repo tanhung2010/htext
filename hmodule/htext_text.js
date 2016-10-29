@@ -7,7 +7,7 @@ var Selection = vscode.Selection;
 
 
 var us = require('underscore.string');
-var htext_util = require('./htext_util.js');
+var p_util = require('./htext_util.js');
 
 module.exports.htextfunction_text =  function() {
     //var opts = { matchOnDescription: true, placeHolder: "Select your text function" };
@@ -16,7 +16,8 @@ module.exports.htextfunction_text =  function() {
     items.push({ label: "lower case", description: "Convert LOWER Case to lower case" ,funcb:text_toLower});
     items.push({ label: "iVERT cASE", description: "Convert Invert Case to iVERT cASE" ,funcb:text_invertcase});
     items.push({ label: "Proper Case", description: "Convert proPer case to Proper Case",funcb:text_propercase });
-    htext_util.htext_handlemenu(items);
+    
+    p_util.htext_handlemenu(items);
 };
 /*
 convert selected text to upper case

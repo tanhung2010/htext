@@ -41,10 +41,28 @@ cde
 </pre>
 
 ### Number 
-* will be support on next version
+<pre>
+* Clean Hex : make array hex as format : <xx>   <yy> -> <xx> <yy>
+* hex to ascii : [32 33 41 34] -> [23A4]
+</pre>
 
 ### OBD Utilties
-* will be support on next version
+<pre>
+* DTC : Hex to SAE
+   12 34 12 35 2245 >> 
+                      ---------------
+                      P1234 
+                      P1235
+                      P2245
+* DTC : SAE to Hex 
+   P1234 P1236 P4567 >> 12 34 12 36 45 67
+
+* Calculate check sum :
+   + CS : get checksum 1 byte as ISO1941 , KWP2000
+   + CS - CRC J1850 : get checksum crc of obd2 protocol PWM and VPW
+   + CS - Invert : Get checksum invert 
+   + CS - 2 Byte : Get checksum with format 2bytes
+</pre>
 
 ## Requirements
 
